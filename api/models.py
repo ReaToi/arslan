@@ -15,7 +15,7 @@ class Product(models.Model):
     price = models.FloatField()
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
     description = models.TextField()
-    image = models.ImageField()
+    image = models.URLField()
     count = models.IntegerField()
 
     def __str__(self):
